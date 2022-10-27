@@ -1,7 +1,5 @@
 import dayjs from "dayjs";
 import ForecastHourlyCard from "./ForecastHourlyCard";
-import uvIcon from "../assets/uv-index.svg";
-import humidityIcon from "../assets/humidity.svg";
 import sunriseIcon from "../assets/sunrise1.svg";
 import sunsetIcon from "../assets/sunset1.svg";
 
@@ -33,9 +31,6 @@ function ForecastCard({ weatherData }) {
                     alt="temp icon"
                   />
                 </div>
-                {/* <div className="forecast-description">
-                  {forecastday.day.condition.text}
-                </div> */}
 
                 <div className="forecast-lh">
                   <div className="forecast-it-ctr">
@@ -52,7 +47,6 @@ function ForecastCard({ weatherData }) {
                   </div>
                 </div>
 
-                {/* <div className="forecast-weather-ctr"> */}
                 <div className="weather-list">
                   <div className="forecast-weather-desc-ctr">
                     <img
@@ -74,33 +68,6 @@ function ForecastCard({ weatherData }) {
                       {forecastday.astro.sunset.replace(/^0+/, "")}
                     </div>
                   </div>
-                  {/* </div> */}
-                  {/* <div className="top-wd-ctr"> */}
-                  {/* <div className="wd-ctr"> */}
-                  {/* <div className="wd-img-ctr">
-                        <img
-                          className="forecast-avg-humidity-img"
-                          src={humidityIcon}
-                          alt="humidity icon"
-                        />
-                      </div>
-                      <div className="forecast-avg-humidity">
-                        {forecastday.day.avghumidity}%
-                      </div>
-                    </div> */}
-                  {/* <div className="wd-ctr">
-                      <div className="wd-img-ctr">
-                        <img
-                          className="forecast-uv-img"
-                          src={uvIcon}
-                          alt="uv icon"
-                        />
-                      </div>
-                      <div className="forecast-uv-index">
-                        {forecastday.day.uv}
-                      </div>
-                    </div> */}
-                  {/* </div> */}
                 </div>
               </div>
               <div className="forecast-times-ctr">
