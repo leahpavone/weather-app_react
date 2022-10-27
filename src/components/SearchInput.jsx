@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import searchIcon from "../../src/assets/search30.png";
+import search from "../../src/assets/search-icon.svg";
 
 function SearchInput({ weatherData, fetchWeatherData }) {
   const inputRef = useRef();
@@ -20,8 +20,8 @@ function SearchInput({ weatherData, fetchWeatherData }) {
             placeholder="Enter City"
             className="location-input"
           />
-          <button type="submit" className="find-location-button">
-            <img src={searchIcon} alt="search icon" className="search-icon" />
+          <button type="submit" className="search-button">
+            <img src={search} alt="search icon" className="search-icon" />
           </button>
         </div>
       </form>
