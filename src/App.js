@@ -21,17 +21,19 @@ function App() {
       .request(options)
       .then((response) => {
         setWeatherData(response.data);
+        console.log(response.data);
       })
       .catch((error) => {
-        console.error(error);
+        console.error(error.message);
       });
   };
 
   useEffect(() => {
-    fetchWeatherData("Los Angeles");
+    fetchWeatherData("los angeles");
   }, []);
 
   if (!weatherData) {
+    console.log("no weather data");
     return null;
   }
 
@@ -50,3 +52,11 @@ function App() {
 }
 
 export default App;
+
+// import DummyData from "./components/DummyData";
+
+// function App() {
+//   return <DummyData />;
+// }
+
+// export default App;
